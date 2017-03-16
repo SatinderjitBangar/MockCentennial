@@ -31,6 +31,7 @@ namespace MockCentennial.Controllers
                     if (student != null)
                     {
                         Session["student"] = student;
+                        return RedirectToAction("Index", "Student");
                     }
                 }
                 else
